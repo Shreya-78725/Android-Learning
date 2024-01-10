@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ShreyaAndroidBootCamp"
         tools:targetApi="31">
         <activity
+            android:name=".topics.autotext.AutoTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.customToast.CustomToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.progressbar.CircularViewBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.tablayout.TabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.progressbar.ProgressBarActivity"
+            android:exported="false" />
+        <activity
             android:name=".topics.dateTime.DateTimeActivity"
             android:exported="false" />
         <activity

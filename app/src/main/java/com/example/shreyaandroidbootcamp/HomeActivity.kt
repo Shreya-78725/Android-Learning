@@ -8,13 +8,17 @@ import android.widget.Button
 import android.window.OnBackInvokedDispatcher
 import com.example.shreyaandroidbootcamp.topics.activity.FirstPageActivity
 import com.example.shreyaandroidbootcamp.topics.activity.SecondPageActivity
+import com.example.shreyaandroidbootcamp.topics.autotext.AutoTextActivity
 import com.example.shreyaandroidbootcamp.topics.checkbox.CheckboxActivity
+import com.example.shreyaandroidbootcamp.topics.customToast.CustomToastActivity
 import com.example.shreyaandroidbootcamp.topics.dateTime.DateTimeActivity
 import com.example.shreyaandroidbootcamp.topics.fragment.FragmentActivity
 import com.example.shreyaandroidbootcamp.topics.listview.ListActivity
+import com.example.shreyaandroidbootcamp.topics.progressbar.ProgressBarActivity
 import com.example.shreyaandroidbootcamp.topics.radiobutton.RadioButtonActivity
 import com.example.shreyaandroidbootcamp.topics.recyclerview.RecyclerActivity
 import com.example.shreyaandroidbootcamp.topics.scrollview.ScrollActivity
+import com.example.shreyaandroidbootcamp.topics.tablayout.TabLayoutActivity
 import com.example.shreyaandroidbootcamp.topics.toast.ToastActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -27,6 +31,10 @@ class HomeActivity : AppCompatActivity() {
     lateinit var btnrecycler:Button
     lateinit var btnhv:Button
     lateinit var btndate:Button
+    lateinit var btnbar:Button
+    lateinit var  btntab:Button
+    lateinit var btncustom : Button
+    lateinit var btnauto : Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -86,6 +94,31 @@ class HomeActivity : AppCompatActivity() {
         btndate=findViewById(R.id.btnDate)
         btndate.setOnClickListener {
             val intent= Intent(this, DateTimeActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        btnbar=findViewById(R.id.btnProgress)
+        btnbar.setOnClickListener {
+            val intent= Intent(this, ProgressBarActivity::class.java)
+            startActivity(intent)
+        }
+
+        btntab=findViewById(R.id.btnTab)
+        btntab.setOnClickListener {
+            val intent= Intent(this, TabLayoutActivity::class.java)
+            startActivity(intent)
+        }
+
+        btncustom=findViewById(R.id.btncstm)
+        btncustom.setOnClickListener {
+            val intent= Intent(this, CustomToastActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnauto=findViewById(R.id.btnAuto)
+        btnauto.setOnClickListener {
+            val intent= Intent(this, AutoTextActivity::class.java)
             startActivity(intent)
         }
 

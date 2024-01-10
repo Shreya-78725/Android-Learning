@@ -20,5 +20,7 @@
     <string name="rdbtn3">Green</string>
     <string name="list">Listview\n</string>
     <string name="recycle">RecyclerView\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
