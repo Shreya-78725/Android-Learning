@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ShreyaAndroidBootCamp</string>
+    <string name="btn1txt">Screen 2</string>
+    <string name="btn2txt">Screen 3</string>
+    <string name="btn3txt">Screen 1</string>
+    <string name="activity3">Activity3</string>
+    <string name="activity2">Activity2</string>
+    <string name="Splash">Activity1</string>
+    <string name="SplashScreen">Android Bootcamp\n   By Shreya</string>
+    <string name="homepage">WEEK 1</string>
+    <string name="home">Activity</string>
+    <string name="fragment1">F1</string>
+    <string name="fragment2">F2</string>
+    <string name="fragment3">F3</string>
+    <string name="frag1">next</string>
+    <string name="check">CheckBox</string>
+    <string name="toast">Toast</string>
+    <string name="rdbtn1">Red</string>
+    <string name="rdbtn2">Yellow\n</string>
+    <string name="rdbtn3">Green</string>
+    <string name="list">Listview\n</string>
+    <string name="recycle">RecyclerView\n</string>
+
+</resources>

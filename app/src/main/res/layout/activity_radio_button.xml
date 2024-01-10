@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".topics.radiobutton.RadioButtonActivity"
+    android:orientation="vertical"
+    android:id="@+id/background">
+
+
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rdbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:text="@string/rdbtn1"
+            android:textSize="23dp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbtn2"
+            android:textSize="23dp" />
+
+        <RadioButton
+            android:id="@+id/rdbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/rdbtn3"
+            android:textSize="23dp" />
+    </RadioGroup>
+</LinearLayout>
