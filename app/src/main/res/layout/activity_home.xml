@@ -1,188 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:gravity="center">
 
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/homepage"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.613"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="29dp"
-        tools:ignore="MissingConstraints" />
+        android:orientation="vertical"
+        >
 
-    <Button
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="400dp"
+            android:layout_height="57dp"
+            android:gravity="center"
+            android:text="@string/homepage"
+            android:textSize="30sp" />
+
+        <Button
         android:id="@+id/btnActivity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/home"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:ignore="MissingConstraints" />
+
+        />
 
     <Button
         android:id="@+id/btnFragment"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fragment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/btnActivity"
-        app:layout_constraintStart_toStartOf="@+id/btnActivity"
-        app:layout_constraintTop_toBottomOf="@+id/btnActivity"
-        tools:ignore="MissingConstraints" />
+        />
 
     <Button
         android:id="@+id/btnCheckbox"
-        android:layout_width="105dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="504dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/check"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnFragment"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnFragment" />
+        />
 
     <Button
         android:id="@+id/btnToast"
-        android:layout_width="99dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/toast"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/btnActivity"
-        app:layout_constraintEnd_toEndOf="@+id/btnActivity"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="@+id/btnActivity"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        />
 
     <Button
         android:id="@+id/btnRadio"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="408dp"
         android:text="RadioButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnToast"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnToast" />
+        />
 
     <Button
         android:id="@+id/btnList"
-        android:layout_width="103dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="352dp"
         android:text="@string/list"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnRadio"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnRadio" />
+         />
 
     <Button
         android:id="@+id/btnRecycle"
-        android:layout_width="99dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="284dp"
         android:text="@string/recycle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnList"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/btnList" />
+         />
 
-    <Button
-        android:id="@+id/hvbtn"
-        android:layout_width="101dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="240dp"
-        android:text="H/V BTN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/btncstm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Customtoast"
+            android:textAllCaps="false" />
 
-    <Button
+        <Button
+            android:id="@+id/btnTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="TabLayout"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/hvbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="H/V BTN" />
+
+        <Button
         android:id="@+id/btnDate"
-        android:layout_width="99dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="172dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="Date"
         android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/hvbtn"
-        app:layout_constraintVertical_bias="0.68" />
+       />
 
     <Button
         android:id="@+id/btnProgress"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
         android:text="ProgressBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
-        app:layout_constraintStart_toStartOf="parent" />
+         />
 
-    <Button
-        android:id="@+id/btnTab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
-        android:text="TabLayout"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.645"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnProgress"
-        app:layout_constraintVertical_bias="0.8" />
-
-    <Button
-        android:id="@+id/btncstm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="Customtoast"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.658"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnProgress"
-        app:layout_constraintVertical_bias="0.857" />
-
-    <Button
+        <Button
         android:id="@+id/btnAuto"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
         android:text="AutoText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent" />
+        />
 
+        <Button
+            android:id="@+id/btnedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EditText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CardView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

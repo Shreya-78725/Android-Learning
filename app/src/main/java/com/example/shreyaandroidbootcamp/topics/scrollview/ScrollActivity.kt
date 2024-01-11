@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.shreyaandroidbootcamp.R
-import com.example.shreyaandroidbootcamp.topics.listview.ListActivity
+
 
 class ScrollActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")

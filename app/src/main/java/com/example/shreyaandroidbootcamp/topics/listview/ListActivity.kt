@@ -14,7 +14,7 @@ class ListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
 
-        var action=supportActionBar
+        val action=supportActionBar
         action!!.title="ListView"
 
         val flowers=arrayOf("rose","lily","jasmine","marigold","lotus","rose","lily","jasmine","marigold","lotus")

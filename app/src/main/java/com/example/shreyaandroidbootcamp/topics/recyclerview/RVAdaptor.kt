@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.shreyaandroidbootcamp.R
 
 class RVAdaptor(private val items:ArrayList<String>): RecyclerView.Adapter<RVAdaptor.viewHolder111>() {
@@ -24,7 +23,7 @@ class RVAdaptor(private val items:ArrayList<String>): RecyclerView.Adapter<RVAda
 
     override fun onBindViewHolder(holder: viewHolder111, position: Int) {
                 val item = items[position]
-        holder.textView.text = item.toString()
+        holder.textView.text = item
     }
     override fun getItemCount(): Int {
         val size = items.size

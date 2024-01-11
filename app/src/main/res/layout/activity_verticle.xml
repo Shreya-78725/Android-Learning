@@ -36,106 +36,106 @@ android:orientation="vertical"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text3" />
             <Button
                 android:id="@+id/btn4"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text4" />
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text5" />
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text6" />
             <Button
                 android:id="@+id/btn7"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text7" />
 
             <Button
                 android:id="@+id/btn8"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text8" />
 
             <Button
                 android:id="@+id/btn9"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text9" />
             <Button
                 android:id="@+id/btn10"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text10" />
             <Button
                 android:id="@+id/btn11"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text11" />
             <Button
                 android:id="@+id/btn12"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text12" />
             <Button
                 android:id="@+id/btn13"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text13" />
             <Button
                 android:id="@+id/btn14"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text14" />
             <Button
                 android:id="@+id/btn15"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text15" />
             <Button
                 android:id="@+id/btn16"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text16" />
 
             <Button
                 android:id="@+id/btn17"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text17" />
             <Button
                 android:id="@+id/btn18"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text18" />
             <Button
                 android:id="@+id/btn19"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:gravity="center"
-                android:text="text1" />
+                android:text="text19" />
 
 
 

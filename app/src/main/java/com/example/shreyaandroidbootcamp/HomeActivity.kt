@@ -5,13 +5,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.window.OnBackInvokedDispatcher
 import com.example.shreyaandroidbootcamp.topics.activity.FirstPageActivity
-import com.example.shreyaandroidbootcamp.topics.activity.SecondPageActivity
 import com.example.shreyaandroidbootcamp.topics.autotext.AutoTextActivity
+import com.example.shreyaandroidbootcamp.topics.cardview.CardViewActivity
 import com.example.shreyaandroidbootcamp.topics.checkbox.CheckboxActivity
 import com.example.shreyaandroidbootcamp.topics.customToast.CustomToastActivity
 import com.example.shreyaandroidbootcamp.topics.dateTime.DateTimeActivity
+import com.example.shreyaandroidbootcamp.topics.edittext.EditTextActivity
 import com.example.shreyaandroidbootcamp.topics.fragment.FragmentActivity
 import com.example.shreyaandroidbootcamp.topics.listview.ListActivity
 import com.example.shreyaandroidbootcamp.topics.progressbar.ProgressBarActivity
@@ -20,6 +20,7 @@ import com.example.shreyaandroidbootcamp.topics.recyclerview.RecyclerActivity
 import com.example.shreyaandroidbootcamp.topics.scrollview.ScrollActivity
 import com.example.shreyaandroidbootcamp.topics.tablayout.TabLayoutActivity
 import com.example.shreyaandroidbootcamp.topics.toast.ToastActivity
+import com.example.shreyaandroidbootcamp.topics.toggle.ToggleButtonActivity
 
 class HomeActivity : AppCompatActivity() {
     lateinit var btnActivity: Button
@@ -35,12 +36,15 @@ class HomeActivity : AppCompatActivity() {
     lateinit var  btntab:Button
     lateinit var btncustom : Button
     lateinit var btnauto : Button
+    lateinit var  btnEdit:Button
+    lateinit var btncard:Button
+    lateinit var btntoggle:Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        var action=supportActionBar
+        val action=supportActionBar
         action!!.title="Topics"
 
         btnActivity=findViewById(R.id.btnActivity)
@@ -122,6 +126,23 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnEdit=findViewById(R.id.btnedit)
+        btnEdit.setOnClickListener {
+            val intent= Intent(this, EditTextActivity::class.java)
+            startActivity(intent)
+        }
+
+        btncard=findViewById(R.id.btnCard)
+        btncard.setOnClickListener {
+            val intent= Intent(this, CardViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        btntoggle=findViewById(R.id.btnToggle)
+        btntoggle.setOnClickListener {
+            val intent= Intent(this, ToggleButtonActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

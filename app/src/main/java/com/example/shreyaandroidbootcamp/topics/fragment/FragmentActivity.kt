@@ -19,7 +19,7 @@ class FragmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
 
-        var action = supportActionBar
+        val action = supportActionBar
         action!!.title = "Fragments"
         gotoFragment(Fragment1())
         btn1 = findViewById<Button?>(R.id.btnF1)

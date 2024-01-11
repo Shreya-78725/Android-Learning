@@ -11,6 +11,10 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler)
 
+        var action=supportActionBar
+        action!!.title="Recycler View"
+
+
         val recycler : RecyclerView =findViewById(R.id.recyclerView)
         recycler.layoutManager=LinearLayoutManager(this)
 
