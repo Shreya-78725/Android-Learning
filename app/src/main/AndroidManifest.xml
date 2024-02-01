@@ -16,6 +16,18 @@
         android:theme="@style/Theme.ShreyaAndroidBootCamp"
         tools:targetApi="31">
         <activity
+            android:name=".topics.startActivityAlternate.SecondAlternateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.startActivityAlternate.StartAlternateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.startActivityForResult.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.startActivityForResult.StartActivity"
+            android:exported="false" />
+        <activity
             android:name=".topics.webView.WebViewActivity"
             android:exported="false" />
         <activity

@@ -19,6 +19,8 @@ import com.example.shreyaandroidbootcamp.topics.radiobutton.RadioButtonActivity
 import com.example.shreyaandroidbootcamp.topics.recyclerview.RecyclerActivity
 import com.example.shreyaandroidbootcamp.topics.scrollview.ScrollActivity
 import com.example.shreyaandroidbootcamp.topics.sharedpreference.SharedPreference
+import com.example.shreyaandroidbootcamp.topics.startActivityAlternate.StartAlternateActivity
+import com.example.shreyaandroidbootcamp.topics.startActivityForResult.StartActivity
 import com.example.shreyaandroidbootcamp.topics.tablayout.TabLayoutActivity
 import com.example.shreyaandroidbootcamp.topics.toast.ToastActivity
 import com.example.shreyaandroidbootcamp.topics.toggle.ToggleButtonActivity
@@ -45,6 +47,8 @@ class HomeActivity : AppCompatActivity() {
     lateinit var btn_shared:Button
     lateinit var btn_vedio:Button
     lateinit var btn_webview:Button
+    lateinit var btn_start:Button
+    lateinit var btn_startAlt:Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -165,6 +169,17 @@ class HomeActivity : AppCompatActivity() {
         btn_webview=findViewById(R.id.btnWebView)
         btn_webview.setOnClickListener {
             val intent= Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_start=findViewById(R.id.btnStartAct)
+        btn_start.setOnClickListener {
+            val intent= Intent(this, StartActivity::class.java)
+            startActivity(intent)
+        }
+        btn_startAlt=findViewById(R.id.btnStartActAlt)
+        btn_startAlt.setOnClickListener {
+            val intent= Intent(this, StartAlternateActivity::class.java)
             startActivity(intent)
         }
     }

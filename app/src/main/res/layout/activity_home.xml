@@ -217,6 +217,24 @@
             android:layout_marginRight="20dp"
             android:textAllCaps="false"/>
 
+        <Button
+            android:id="@+id/btnStartAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StartActivityForResult"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnStartActAlt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StartActivityForResult.Alternate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
     </ScrollView>
 
