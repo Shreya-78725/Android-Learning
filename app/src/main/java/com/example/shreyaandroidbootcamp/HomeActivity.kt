@@ -18,9 +18,12 @@ import com.example.shreyaandroidbootcamp.topics.progressbar.ProgressBarActivity
 import com.example.shreyaandroidbootcamp.topics.radiobutton.RadioButtonActivity
 import com.example.shreyaandroidbootcamp.topics.recyclerview.RecyclerActivity
 import com.example.shreyaandroidbootcamp.topics.scrollview.ScrollActivity
+import com.example.shreyaandroidbootcamp.topics.sharedpreference.SharedPreference
 import com.example.shreyaandroidbootcamp.topics.tablayout.TabLayoutActivity
 import com.example.shreyaandroidbootcamp.topics.toast.ToastActivity
 import com.example.shreyaandroidbootcamp.topics.toggle.ToggleButtonActivity
+import com.example.shreyaandroidbootcamp.topics.webView.WebViewActivity
+import com.example.shreyaandroidbootcamp.vedioPlayer.VedioPlayer
 
 class HomeActivity : AppCompatActivity() {
     lateinit var btnActivity: Button
@@ -39,6 +42,9 @@ class HomeActivity : AppCompatActivity() {
     lateinit var  btnEdit:Button
     lateinit var btncard:Button
     lateinit var btntoggle:Button
+    lateinit var btn_shared:Button
+    lateinit var btn_vedio:Button
+    lateinit var btn_webview:Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -141,6 +147,24 @@ class HomeActivity : AppCompatActivity() {
         btntoggle=findViewById(R.id.btnToggle)
         btntoggle.setOnClickListener {
             val intent= Intent(this, ToggleButtonActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_shared=findViewById(R.id.btnShared)
+        btn_shared.setOnClickListener {
+            val intent= Intent(this, SharedPreference::class.java)
+            startActivity(intent)
+        }
+
+        btn_vedio=findViewById(R.id.btnVedio)
+        btn_vedio.setOnClickListener {
+            val intent= Intent(this, VedioPlayer::class.java)
+            startActivity(intent)
+        }
+
+        btn_webview=findViewById(R.id.btnWebView)
+        btn_webview.setOnClickListener {
+            val intent= Intent(this, WebViewActivity::class.java)
             startActivity(intent)
         }
     }

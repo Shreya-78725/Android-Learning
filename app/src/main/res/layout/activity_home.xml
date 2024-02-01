@@ -188,6 +188,35 @@
             android:layout_marginRight="20dp"
             android:textAllCaps="false"
             />
+
+        <Button
+            android:id="@+id/btnShared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shared Preference"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+
+        <Button
+            android:id="@+id/btnVedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vedio Player"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Web View"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
     </ScrollView>
 

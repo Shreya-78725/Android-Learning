@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShreyaAndroidBootCamp"
         tools:targetApi="31">
+        <activity
+            android:name=".topics.webView.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vedioPlayer.VedioPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".topics.sharedpreference.SharedPreference"
+            android:exported="false" />
         <activity
             android:name=".topics.toggle.ToggleButtonActivity"
             android:exported="false" />
@@ -27,9 +39,11 @@
         <activity
             android:name=".topics.customToast.CustomToastActivity"
             android:exported="false" />
-        <activity
+        <!--
+  <activity
             android:name=".topics.progressbar.CircularViewBarActivity"
             android:exported="false" />
+        -->
         <activity
             android:name=".topics.tablayout.TabLayoutActivity"
             android:exported="false" />

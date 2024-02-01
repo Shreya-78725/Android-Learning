@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".topics.progressbar.CircularViewBarActivity">
+    tools:context=".vedioPlayer.VedioPlayer">
 
-
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
