@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.shreyaandroidbootcamp.topics.activity.FirstPageActivity
+import com.example.shreyaandroidbootcamp.topics.api.screens.EmployeeListActivity
 import com.example.shreyaandroidbootcamp.topics.autotext.AutoTextActivity
 import com.example.shreyaandroidbootcamp.topics.cardview.CardViewActivity
 import com.example.shreyaandroidbootcamp.topics.checkbox.CheckboxActivity
@@ -49,6 +50,10 @@ class HomeActivity : AppCompatActivity() {
     lateinit var btn_webview:Button
     lateinit var btn_start:Button
     lateinit var btn_startAlt:Button
+    lateinit var btn_post : Button
+    lateinit var btn_patch : Button
+    lateinit var btn_put : Button
+    lateinit var btn_delete :Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -182,6 +187,12 @@ class HomeActivity : AppCompatActivity() {
             val intent= Intent(this, StartAlternateActivity::class.java)
             startActivity(intent)
         }
+        btn_post=findViewById(R.id.btnPostApi)
+        btn_post.setOnClickListener {
+            val intent= Intent(this, EmployeeListActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

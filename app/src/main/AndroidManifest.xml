@@ -16,6 +16,27 @@
         android:theme="@style/Theme.ShreyaAndroidBootCamp"
         tools:targetApi="31">
         <activity
+            android:name=".topics.api.screens.PostApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.api.screens.UpdatePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.api.screens.EmployeeListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.patchApi.PatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.deleteApi.DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.putApi.PutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topics.api.screens.EmployeeDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".topics.startActivityAlternate.SecondAlternateActivity"
             android:exported="false" />
         <activity

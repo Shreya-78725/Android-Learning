@@ -17,7 +17,7 @@ class RVAdaptor(private val items:ArrayList<String>): RecyclerView.Adapter<RVAda
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder111 {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.rvadaptor,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.recycle,parent,false)
         return viewHolder111(view)
     }
 
